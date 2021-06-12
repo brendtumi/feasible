@@ -1,2 +1,2 @@
-# feasible
+# Feasible
 Development environment setup wizard

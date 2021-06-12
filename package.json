@@ -1,0 +1,19 @@
+{
+  "name": "feasible",
+  "version": "0.1.0",
+  "description": "Development environment setup wizard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brendtumi/feasible.git"
+  },
+  "author": "Tümay Çeber <tumayceber@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brendtumi/feasible/issues"
+  },
+  "homepage": "https://github.com/brendtumi/feasible#readme"
+}
