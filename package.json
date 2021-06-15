@@ -2,7 +2,10 @@
   "name": "feasible",
   "version": "0.1.0",
   "description": "Development environment setup wizard",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "bin": {
+    "feasible": "bin/feasible.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +18,23 @@
   "bugs": {
     "url": "https://github.com/brendtumi/feasible/issues"
   },
-  "homepage": "https://github.com/brendtumi/feasible#readme"
+  "homepage": "https://github.com/brendtumi/feasible#readme",
+  "dependencies": {
+    "boxen": "5.0.1",
+    "chalk": "4.1.1",
+    "commander": "7.2.0",
+    "concurrently": "6.2.0",
+    "exec-sh": "0.4.0",
+    "globby": "11.0.3",
+    "inquirer": "8.1.0",
+    "js-yaml": "4.1.0",
+    "json5": "2.2.0",
+    "update-notifier": "5.1.0"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "devDependencies": {
+    "prettier": "2.3.1"
+  }
 }
