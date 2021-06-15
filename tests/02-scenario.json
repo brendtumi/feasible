@@ -2,15 +2,16 @@
   "variables": {
     "VAR1": {
       "question": "What is variable 1",
-      "type": "string"
+      "type": "input"
     },
     "VAR2": {
       "question": "What is variable 2",
-      "type": "number"
+      "type": "number",
+      "initial": 42
     },
     "VAR3": {
       "question": "What is variable 3",
-      "type": "string",
+      "type": "list",
       "options": [
         "test 1",
         "test 2",
@@ -19,7 +20,7 @@
     },
     "VAR4": {
       "question": "What is variable 4",
-      "type": "number",
+      "type": "list",
       "options": [
         1,
         2,
@@ -28,6 +29,10 @@
         5,
         6
       ]
+    },
+    "VAR5": {
+      "question": "What is variable 5",
+      "type": "password"
     }
   },
   "defaults": {
@@ -36,14 +41,48 @@
   },
   "actions": {
     "pre": [
-      "echo 'pre'"
+      "echo ${VAR1}",
+      "echo ${VAR1.val}",
+      "yarn"
     ],
     "post": [
       "echo 'post'"
     ]
   },
   "files": {
-    "tests/.env1": "${DEF1}\n${VAR1}\nTEST_VAR_3=${VAR3.val}",
-    "tests/.env2": "${DEF2}\n${VAR2}"
+    "tests/.env1": "${DEF1}\n${VAR1}\nTEST_VAR_3=${VAR3.val}\n${DEF1}\n${VAR1}\nTEST_VAR_3=${VAR4.val}\n\n${DEF1}\n${VAR1}\nTEST_VAR_3=${VAR3.val}",
+    "tests/.env2": "${DEF2}\n${VAR2}\n${VAR5}",
+    "tests/super.test.yml": {
+      "type": "yaml",
+      "variables": [
+        "VAR1",
+        "VAR2",
+        [
+          "NEW_NAME",
+          "VAR3"
+        ],
+        [
+          "NEW_NAME2",
+          "VAR3"
+        ],
+        "DEF1"
+      ]
+    },
+    "tests/super3.env": {
+      "type": "env",
+      "variables": [
+        "VAR1",
+        "VAR2",
+        [
+          "NEW_NAME",
+          "VAR3"
+        ],
+        [
+          "NEW_NAME2",
+          "VAR3"
+        ],
+        "DEF1"
+      ]
+    }
   }
 }

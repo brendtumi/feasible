@@ -19,8 +19,9 @@ program
   .option('-f, --force', 'Overwrite current setup if it exists and start over', false)
   .option('-p, --parallel', 'Enable parallel actions if possible', false)
   .option('-s, --separator <Separator>', 'Default separator for variable and values', '=')
-  .action(({ config, force, parallel }) => {
-    require('../lib')({ config, force, parallel });
+  .option('-n, --no-clean', "Don't clean up old output files")
+  .action(({ config, force, parallel, noClean }) => {
+    require('../lib')({ config, force, parallel, noClean });
   });
 
 program.parse(process.argv);
