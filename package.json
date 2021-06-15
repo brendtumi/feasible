@@ -29,6 +29,7 @@
     "inquirer": "8.1.0",
     "js-yaml": "4.1.0",
     "json5": "2.2.0",
+    "node-fetch": "2.6.1",
     "update-notifier": "5.1.0"
   },
   "engines": {
