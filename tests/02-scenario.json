@@ -1,5 +1,8 @@
 {
-  "repository": "https://mygithub.gsk.com/gsk-tech/commitizen-semver-nodejs-template.git",
+  "repository": {
+    "url": "https://mygithub.gsk.com/gsk-tech/commitizen-semver-nodejs-template.git",
+    "target": "tmp1"
+  },
   "variables": {
     "VAR1": {
       "question": "What is variable 1",
