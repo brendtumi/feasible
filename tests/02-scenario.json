@@ -1,4 +1,5 @@
 {
+  "repository": "https://mygithub.gsk.com/gsk-tech/commitizen-semver-nodejs-template.git",
   "variables": {
     "VAR1": {
       "question": "What is variable 1",
