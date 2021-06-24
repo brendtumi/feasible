@@ -1,7 +1,7 @@
 {
   "name": "feasible",
   "version": "0.2.0",
-  "description": "Development environment setup wizard",
+  "description": "Guided and unified development environment",
   "main": "lib/index.js",
   "bin": {
     "feasible": "bin/feasible.js"
