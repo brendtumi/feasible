@@ -32,7 +32,8 @@
     "json5": "2.2.0",
     "make-dir": "3.1.0",
     "node-fetch": "2.6.1",
-    "update-notifier": "5.1.0"
+    "update-notifier": "5.1.0",
+    "uuid": "8.3.2"
   },
   "engines": {
     "node": ">=12"
