@@ -25,6 +25,9 @@ variables:
   VAR5:
     question: What is variable 5
     type: random
+  VAR6:
+    question: What is variable 6
+    type: base64
 defaults:
   DEF1: default var 1
   DEF2: 2
@@ -58,6 +61,7 @@ files:
     ${DEF1}
     ${VAR1}
     TEST_VAR_3=${VAR3.val}
+    ${VAR6}
   tests/.env2: |-
     ${DEF2}
     ${VAR2}
