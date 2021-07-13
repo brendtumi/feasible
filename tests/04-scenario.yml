@@ -1,0 +1,68 @@
+variables:
+  VAR1:
+    question: What is variable 1
+    type: string
+  VAR2:
+    question: What is variable 2
+    type: number
+  VAR3:
+    question: What is variable 3
+    type: string
+    options:
+      - test 1
+      - test 2
+      - test 3
+  VAR4:
+    question: What is variable 4
+    type: number
+    options:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+  VAR5:
+    question: What is variable 5
+    type: random
+defaults:
+  DEF1: default var 1
+  DEF2: 2
+  DEF3:
+    type: bash
+    output: json
+    command: >-
+      echo '{"test": 2345}'
+    query: test
+  DEF4:
+    type: bash
+    output: json
+    command: >-
+      echo '{"menu":{"id":"file","value":"File","popup":{"menuitem":[{"value":"New","onclick":"CreateNewDoc()"},{"value":"Open","onclick":"OpenDoc()"},{"value":"Close","onclick":"CloseDoc()"}]}}}'
+    query: menu.value
+  DEF5:
+    type: bash
+    command: >-
+      echo "this is def5 string output"
+  DEF6:
+    type: bash
+    command: >-
+      echo "${DEF1.val}"
+actions:
+  pre:
+    - echo 'pre'
+  post:
+    - echo 'post'
+files:
+  tests/.env1: |-
+    ${DEF1}
+    ${VAR1}
+    TEST_VAR_3=${VAR3.val}
+  tests/.env2: |-
+    ${DEF2}
+    ${VAR2}
+  tests/.env3: |
+    ${DEF3}
+    ${DEF4}
+    ${DEF5}
+    ${DEF6}
