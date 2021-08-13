@@ -21,11 +21,16 @@ program
     'Configuration file url. Example: https://my-private-repo.git.com/raw/dope-repository/main/feasible.{json,json5,yml}?token=TOKEN',
   )
   .option('-f, --force', 'Overwrite current setup if it exists and start over', false)
+  .option(
+    '-i, --noInteraction',
+    'Non-interactive execution. Lock file must be exits, any non-present value will be pass as empty',
+    false,
+  )
   .option('-p, --parallel', 'Enable parallel actions if possible', false)
   .option('-s, --separator <Separator>', 'Default separator for variable and values', '=')
-  .option('-n, --no-clean', "Don't clean up old output files")
-  .action(({ config, url, force, parallel, noClean }) => {
-    require('../lib')({ config, url, force, parallel, noClean });
+  .option('-n, --noClean', "Don't clean up old output files", false)
+  .action(({ config, url, force, noInteraction, parallel, noClean }) => {
+    require('../lib')({ config, url, force, noInteraction, parallel, noClean });
   });
 
 program.parse(process.argv);
