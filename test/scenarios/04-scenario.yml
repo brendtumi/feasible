@@ -57,15 +57,15 @@ actions:
   post:
     - echo 'post'
 files:
-  tests/.env1: |-
+  test/.env1: |-
     ${DEF1}
     ${VAR1}
     TEST_VAR_3=${VAR3.val}
     ${VAR6}
-  tests/.env2: |-
+  test/.env2: |-
     ${DEF2}
     ${VAR2}
-  tests/.env3: |
+  test/.env3: |
     ${DEF3}
     ${DEF4}
     ${DEF5}

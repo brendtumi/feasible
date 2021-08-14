@@ -34,10 +34,10 @@ actions:
   post:
     - echo 'post'
 files:
-  tests/.env1: |-
+  test/.env1: |-
     ${DEF1}
     ${VAR1}
     TEST_VAR_3=${VAR3.val}
-  tests/.env2: |-
+  test/.env2: |-
     ${DEF2}
     ${VAR2}
