@@ -2,6 +2,8 @@
 
 const updateNotifier = require('update-notifier');
 const { Command } = require('commander');
+const feasible = require('../lib');
+const log = require('../lib/logs')();
 
 const pkg = require('../package.json');
 
@@ -29,8 +31,14 @@ program
   .option('-p, --parallel', 'Enable parallel actions if possible', false)
   .option('-s, --separator <Separator>', 'Default separator for variable and values', '=')
   .option('-n, --noClean', "Don't clean up old output files", false)
-  .action(({ config, url, force, noInteraction, parallel, noClean }) => {
-    require('../lib')({ config, url, force, noInteraction, parallel, noClean });
+  .option('-q, --quiet', "Silent mode", false)
+  .action(({ config, url, force, noInteraction, parallel, noClean, quiet }) => {
+    log.silent = quiet;
+    feasible({ config, url, force, noInteraction, parallel, noClean }).catch((err) => {
+      log.error(err.message);
+      log.info(err.stack);
+      process.exit(1);
+    });
   });
 
 program.parse(process.argv);
