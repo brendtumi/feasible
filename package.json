@@ -1,6 +1,6 @@
 {
   "name": "feasible",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "Guided and unified development environment",
   "main": "lib/index.js",
   "bin": {
