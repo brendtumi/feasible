@@ -31,10 +31,20 @@ program
   .option('-p, --parallel', 'Enable parallel actions if possible', false)
   .option('-s, --separator <Separator>', 'Default separator for variable and values', '=')
   .option('-n, --noClean', "Don't clean up old output files", false)
-  .option('-q, --quiet', "Silent mode", false)
-  .action(({ config, url, force, noInteraction, parallel, noClean, quiet }) => {
+  .option('-a, --actions <Action>', 'Execute actions only ', 'all')
+  .option('-q, --quiet', 'Silent mode', false)
+  .action(({ config, url, force, noInteraction, parallel, noClean, quiet, actions }) => {
     log.silent = quiet;
-    feasible({ config, url, force, noInteraction, parallel, noClean }).catch((err) => {
+
+    feasible({
+      config,
+      url,
+      force,
+      noInteraction,
+      parallel,
+      noClean,
+      actions: ['none', 'pre', 'post', 'all'].includes(actions) ? actions : 'all',
+    }).catch((err) => {
       log.error(err.message);
       log.info(err.stack);
       process.exit(1);
