@@ -1,6 +1,6 @@
 {
   "repository": {
-    "url": "https://mygithub.gsk.com/gsk-tech/commitizen-semver-nodejs-template.git",
+    "url": "https://github.com/commitizen-semver-nodejs-template.git",
     "target": "tmp1"
   },
   "variables": {
