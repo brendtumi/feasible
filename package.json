@@ -21,13 +21,13 @@
   "homepage": "https://github.com/brendtumi/feasible#readme",
   "dependencies": {
     "boxen": "5.0.1",
-    "chalk": "4.1.1",
+    "chalk": "4.1.2",
     "commander": "7.2.0",
-    "concurrently": "6.2.0",
+    "concurrently": "6.3.0",
     "download-git-repo": "3.0.2",
     "exec-sh": "0.4.0",
     "globby": "11.0.3",
-    "inquirer": "8.1.0",
+    "inquirer": "8.2.0",
     "is-base64": "1.1.0",
     "js-yaml": "4.1.0",
     "json5": "2.2.0",
@@ -43,7 +43,7 @@
   "devDependencies": {
     "chai": "4.3.4",
     "chai-as-promised": "7.1.1",
-    "mocha": "9.0.3",
-    "prettier": "2.3.1"
+    "mocha": "9.1.2",
+    "prettier": "2.4.1"
   }
 }
