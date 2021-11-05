@@ -2,6 +2,16 @@
 
 Guided and unified development environments setup wizard.
 
+## Life Cycle
+1. Download config file from remote if `--url` option is used
+2. Prompt questions
+3. Resolve default variables
+4. Pre hooks executed
+5. Clone remote repository (if `repository` defined in config file)
+6. Clean up earlier produced files
+7. Render and save files
+8. Post hooks executed
+
 ## Getting Started
 ### 1. Automate
 Let's start by installing Feasible as a dev dependency of your project
