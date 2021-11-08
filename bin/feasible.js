@@ -31,11 +31,11 @@ program
     return previous.concat([{ key: k, value: v }]);
   }), [])
   // .option('-a, --actions <Action>', 'execute actions only ', 'all')
-  .addOption(new Option('-a, --actions <Action>', 'execute actions only').default('all').choices(['none', 'pre', 'post', 'all']))
+  .addOption(new Option('-a, --actions <Action>', 'execute actions only').default('all').choices(['none', 'initial', 'pre', 'post', 'all']))
   .option('-n, --noClean', 'don\'t clean up old output files', false)
   .option(
     '-i, --noInteraction',
-    'non-interactive execution. Lock file must be exits, any non-present value will be pass as empty',
+    'non-interactive execution. Lock file must be exits, any non-present value will be pass as empty.',
     false,
   )
   .option('-p, --parallel', 'enable parallel actions if possible', false)

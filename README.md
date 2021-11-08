@@ -6,11 +6,12 @@ Guided and unified development environments setup wizard.
 1. Download config file from remote if `--url` option is used
 2. Prompt questions
 3. Resolve default variables
-4. Pre hooks executed
-5. Clone remote repository (if `repository` defined in config file)
-6. Clean up earlier produced files
-7. Render and save files
-8. Post hooks executed
+4. Initial hooks executed (if this is first setup/no lock file)
+5. Pre hooks executed
+6. Clone remote repository (if `repository` defined in config file)
+7. Clean up earlier produced files
+8. Render and save files
+9. Post hooks executed
 
 ## Getting Started
 ### 1. Automate
