@@ -51,11 +51,17 @@ defaults:
     type: bash
     command: >-
       echo "${DEF1.val}"
+  DEF7:
+    type: bash
+    command: >-
+      echo "value of var 1 -> ${VAR1.val}"
 actions:
+  initial:
+    - echo '---------- initial ----------'
   pre:
-    - echo 'pre'
+    - echo '---------- pre ----------'
   post:
-    - echo 'post'
+    - echo '---------- post ----------'
 files:
   test/.env1: |-
     ${DEF1}
