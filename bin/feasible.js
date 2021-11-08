@@ -30,7 +30,6 @@ program
     const [k, v] = value.split('=');
     return previous.concat([{ key: k, value: v }]);
   }), [])
-  // .option('-a, --actions <Action>', 'execute actions only ', 'all')
   .addOption(new Option('-a, --actions <Action>', 'execute actions only').default('all').choices(['none', 'initial', 'pre', 'post', 'all']))
   .option('-n, --noClean', 'don\'t clean up old output files', false)
   .option(
