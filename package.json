@@ -1,6 +1,6 @@
 {
   "name": "feasible",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Guided and unified development environment",
   "main": "lib/index.js",
   "type": "commonjs",
