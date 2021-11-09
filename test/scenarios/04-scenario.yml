@@ -105,4 +105,4 @@ files:
         - DEF1
   test/.env6: |
     # this is copy of test/.env1
-    ${test_env1}
+    ${test_env1.val.unescape}
