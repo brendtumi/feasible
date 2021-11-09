@@ -1,0 +1,21 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "standard",
+    "prettier"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "rules": {
+  },
+  "ignorePatterns": [
+    "_backup/**",
+    "test/**"
+  ]
+}

@@ -3,11 +3,14 @@
   "version": "1.1.0",
   "description": "Guided and unified development environment",
   "main": "lib/index.js",
+  "type": "commonjs",
   "bin": {
     "feasible": "bin/feasible.js"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -20,14 +23,13 @@
   },
   "homepage": "https://github.com/brendtumi/feasible#readme",
   "dependencies": {
-    "boxen": "5.0.1",
     "chalk": "4.1.1",
-    "commander": "7.2.0",
-    "concurrently": "6.2.0",
+    "commander": "8.3.0",
+    "concurrently": "6.3.0",
     "download-git-repo": "3.0.2",
     "exec-sh": "0.4.0",
     "globby": "11.0.3",
-    "inquirer": "8.1.0",
+    "inquirer": "8.2.0",
     "is-base64": "1.1.0",
     "js-yaml": "4.1.0",
     "json5": "2.2.0",
@@ -35,15 +37,23 @@
     "make-dir": "3.1.0",
     "node-fetch": "2.6.1",
     "update-notifier": "5.1.0",
-    "uuid": "8.3.2"
+    "uuid": "8.3.2",
+    "vm2": "3.9.5"
   },
   "engines": {
     "node": ">=12"
   },
   "devDependencies": {
+    "babel-eslint": "10.1.0",
     "chai": "4.3.4",
     "chai-as-promised": "7.1.1",
-    "mocha": "9.0.3",
-    "prettier": "2.3.1"
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.1.1",
+    "mocha": "9.1.3",
+    "prettier": "2.4.1"
   }
 }

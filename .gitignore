@@ -101,8 +101,10 @@ $RECYCLE.BIN/
 *.code-workspace
 .history/
 feasible.lock
+feasible.lock.backup
 feasible.json
 feasible.json5
 feasible.yml
 tmp
 tmp1
+_backup
