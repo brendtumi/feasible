@@ -55,6 +55,7 @@ defaults:
     type: bash
     command: >-
       echo "value of var 1 -> ${VAR1.val}"
+  DEF8: true
 actions:
   initial:
     - echo '---------- initial ----------'
@@ -76,3 +77,29 @@ files:
     ${DEF4}
     ${DEF5}
     ${DEF6}
+  test/super.test.yml:
+    type: yaml
+    variables:
+      - VAR1
+      - VAR2
+      - - NEW_NAME
+        - VAR3
+      - - NEW_NAME2
+        - VAR3
+      - DEF1
+  test/.env4:
+    condition: $DEF8 === true
+    content: |
+      This is generated only if DEF8 is true
+  test/.env5:
+    condition: $DEF8 === true
+    content:
+      type: yaml
+      variables:
+        - VAR1
+        - VAR2
+        - - NEW_NAME
+        - VAR3
+        - - NEW_NAME2
+        - VAR3
+        - DEF1
