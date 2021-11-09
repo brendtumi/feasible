@@ -92,7 +92,7 @@ files:
     content: |
       This is generated only if DEF8 is true
   test/.env5:
-    condition: $DEF8 === true
+    condition: $DEF8 === true && $DEF5.length > 5
     content:
       type: yaml
       variables:
@@ -103,3 +103,6 @@ files:
         - - NEW_NAME2
         - VAR3
         - DEF1
+  test/.env6: |
+    # this is copy of test/.env1
+    ${test_env1}
