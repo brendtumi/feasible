@@ -106,3 +106,9 @@ files:
   test/.env6: |
     # this is copy of test/.env1
     ${test_env1.val.unescape}
+  test/.env7:
+    condition: $DEF8 !== true
+    success: |
+      Condition is true
+    fail: |
+      Condition is false
