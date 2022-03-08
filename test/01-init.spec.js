@@ -8,7 +8,7 @@ chai.should();
 
 describe('feasible', () => {
   it('should be rejected without configration', () => {
-    return feasible().should.be.rejectedWith("Cannot read property 'config' of undefined");
+    return feasible().should.be.rejectedWith("Cannot read property 'actions' of undefined");
   });
   it('should be rejected for unsupported conf file', () => {
     return feasible({ config: './test/scenarios/00-unsupported.toml' }).should.be.rejectedWith(
