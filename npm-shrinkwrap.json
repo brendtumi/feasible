@@ -903,8 +903,7 @@
     "node_modules/cacheable-request": {
       "version": "2.1.4",
       "resolved": "https://registry.npmjs.org/cacheable-request/-/cacheable-request-2.1.4.tgz",
-      "integrity": "sha1-DYCIAbY0KtM8kd+dC0TcCbkeXD0=",
-      "license": "MIT",
+      "integrity": "sha512-vag0O2LKZ/najSoUwDbVlnlCFvhBE/7mGTY2B5FgCBDcRD+oVV1HYTOwM6JZfMg/hIcM6IwnTZ1uQQL5/X3xIQ==",
       "dependencies": {
         "clone-response": "1.0.2",
         "get-stream": "3.0.0",
@@ -2629,8 +2628,7 @@
     "node_modules/git-clone": {
       "version": "0.1.0",
       "resolved": "https://registry.npmjs.org/git-clone/-/git-clone-0.1.0.tgz",
-      "integrity": "sha1-DXYWN3gJOu9/HDAjjyqe8/B6Lrk=",
-      "license": "ISC"
+      "integrity": "sha512-zs9rlfa7HyaJAKG9o+V7C6qfMzyc+tb1IIXdUFcOBcR1U7siKy/uPdauLlrH1mc0vOgUwIv4BF+QxPiiTYz3Rw=="
     },
     "node_modules/glob": {
       "version": "7.2.0",
@@ -4283,10 +4281,9 @@
       }
     },
     "node_modules/package-json/node_modules/http-cache-semantics": {
-      "version": "4.1.0",
-      "resolved": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz",
-      "integrity": "sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==",
-      "license": "BSD-2-Clause"
+      "version": "4.1.1",
+      "resolved": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.1.1.tgz",
+      "integrity": "sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ=="
     },
     "node_modules/package-json/node_modules/keyv": {
       "version": "3.1.0",
@@ -5337,11 +5334,10 @@
       }
     },
     "node_modules/tsconfig-paths/node_modules/json5": {
-      "version": "1.0.1",
-      "resolved": "https://registry.npmjs.org/json5/-/json5-1.0.1.tgz",
-      "integrity": "sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==",
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/json5/-/json5-1.0.2.tgz",
+      "integrity": "sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==",
       "dev": true,
-      "license": "MIT",
       "dependencies": {
         "minimist": "^1.2.0"
       },
@@ -6403,7 +6399,7 @@
     "cacheable-request": {
       "version": "2.1.4",
       "resolved": "https://registry.npmjs.org/cacheable-request/-/cacheable-request-2.1.4.tgz",
-      "integrity": "sha1-DYCIAbY0KtM8kd+dC0TcCbkeXD0=",
+      "integrity": "sha512-vag0O2LKZ/najSoUwDbVlnlCFvhBE/7mGTY2B5FgCBDcRD+oVV1HYTOwM6JZfMg/hIcM6IwnTZ1uQQL5/X3xIQ==",
       "requires": {
         "clone-response": "1.0.2",
         "get-stream": "3.0.0",
@@ -7607,7 +7603,7 @@
     "git-clone": {
       "version": "0.1.0",
       "resolved": "https://registry.npmjs.org/git-clone/-/git-clone-0.1.0.tgz",
-      "integrity": "sha1-DXYWN3gJOu9/HDAjjyqe8/B6Lrk="
+      "integrity": "sha512-zs9rlfa7HyaJAKG9o+V7C6qfMzyc+tb1IIXdUFcOBcR1U7siKy/uPdauLlrH1mc0vOgUwIv4BF+QxPiiTYz3Rw=="
     },
     "glob": {
       "version": "7.2.0",
@@ -8679,9 +8675,9 @@
           }
         },
         "http-cache-semantics": {
-          "version": "4.1.0",
-          "resolved": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz",
-          "integrity": "sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ=="
+          "version": "4.1.1",
+          "resolved": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.1.1.tgz",
+          "integrity": "sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ=="
         },
         "keyv": {
           "version": "3.1.0",
@@ -9389,9 +9385,9 @@
       },
       "dependencies": {
         "json5": {
-          "version": "1.0.1",
-          "resolved": "https://registry.npmjs.org/json5/-/json5-1.0.1.tgz",
-          "integrity": "sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==",
+          "version": "1.0.2",
+          "resolved": "https://registry.npmjs.org/json5/-/json5-1.0.2.tgz",
+          "integrity": "sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==",
           "dev": true,
           "requires": {
             "minimist": "^1.2.0"
