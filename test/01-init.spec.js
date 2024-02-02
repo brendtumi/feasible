@@ -3,7 +3,7 @@ const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 
 chai.use(chaiAsPromised);
-const { expect } = chai;
+//const { expect } = chai;
 chai.should();
 
 describe('feasible', () => {
