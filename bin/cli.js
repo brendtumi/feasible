@@ -34,7 +34,6 @@ program
     'Execute in non-interactive mode. Lock file must exist; any non-present value will be pass as empty.',
     false
   )
-  .option('-p, --parallel', 'Enable parallel actions execution if possible', false)
   .option('-q, --quiet', 'Execute in silent mode', false)
   .option('-s, --separator <Separator>', 'Specify the default separator for variables and their values', '=')
   .action(async ({ quiet, ...args }) => {
