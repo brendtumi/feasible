@@ -3,8 +3,8 @@
 import updateNotifier from 'update-notifier';
 import { Command, Option } from 'commander';
 import { createRequire } from 'node:module';
-import { logger, feasible, exit } from '../lib/index.js';
-
+import { logger, feasible, exit, debug } from '../lib/index.js';
+debug('##################### DEV #####################');
 const pkg = createRequire(import.meta.url)('../package.json');
 
 updateNotifier({ pkg }).notify();
@@ -40,6 +40,7 @@ program
   .option('-q, --quiet', 'Execute in silent mode', false)
   .option('-s, --separator <Separator>', 'Specify the default separator for variables and their values', '=')
   .action(async ({ quiet, ...args }) => {
+    debug('Program is starting');
     try {
       logger.silent = quiet;
       await feasible(args);
@@ -51,4 +52,4 @@ program
     }
   });
 
-program.parse(process.argv);
+await program.parseAsync(process.argv);
