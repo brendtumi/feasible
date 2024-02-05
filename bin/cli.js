@@ -2,7 +2,7 @@
 
 import updateNotifier from 'update-notifier';
 import { Command, Option } from 'commander';
-import { createRequire } from 'module';
+import { createRequire } from 'node:module';
 import { logger, feasible, exit } from '../lib/index.js';
 
 const pkg = createRequire(import.meta.url)('../package.json');
