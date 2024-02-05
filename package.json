@@ -34,7 +34,7 @@
     "isolated-vm": "4.7.2",
     "js-yaml": "4.1.0",
     "json5": "2.2.3",
-    "lodash": "4.17.21",
+    "lodash.get": "4.4.2",
     "make-dir": "4.0.0",
     "update-notifier": "7.0.0",
     "uuid": "9.0.1"
