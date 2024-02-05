@@ -1,6 +1,6 @@
 {
   "name": "feasible",
-  "version": "3.0.0-alpha.2",
+  "version": "3.0.0-alpha.3",
   "description": "Guided and unified development environment",
   "main": "lib/index.js",
   "type": "module",
