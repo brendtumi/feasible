@@ -2,7 +2,9 @@
 
 import updateNotifier from 'update-notifier';
 import { Command, Option } from 'commander';
-import { pkg, logger, feasible, exit } from '../lib/index.js';
+import { logger, feasible, exit, readAsObject } from '../lib/index.js';
+
+const pkg = await readAsObject('../package.json');
 
 updateNotifier({ pkg }).notify();
 
