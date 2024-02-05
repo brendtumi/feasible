@@ -2,9 +2,10 @@
 
 import updateNotifier from 'update-notifier';
 import { Command, Option } from 'commander';
-import { logger, feasible, exit, readAsObject } from '../lib/index.js';
+import { createRequire } from 'module';
+import { logger, feasible, exit } from '../lib/index.js';
 
-const pkg = await readAsObject('../package.json');
+const pkg = createRequire(import.meta.url)('../package.json');
 
 updateNotifier({ pkg }).notify();
 
