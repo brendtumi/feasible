@@ -1,7 +1,7 @@
 {
   "name": "feasible",
   "version": "3.0.0",
-  "description": "Guided and unified development environment",
+  "description": "A question-answer based, configurable and automated development environment setup wizard that helps automate and standardize development environments across teams.",
   "main": "lib/index.js",
   "type": "module",
   "bin": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/brendtumi/feasible#readme",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
     "chalk": "5.3.0",
