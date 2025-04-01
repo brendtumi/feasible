@@ -1,7 +1,7 @@
 {
   "name": "feasible",
-  "version": "3.0.0",
-  "description": "Guided and unified development environment",
+  "version": "4.0.0",
+  "description": "A question-answer based, configurable and automated development environment setup wizard that helps automate and standardize development environments across teams.",
   "main": "lib/index.js",
   "type": "module",
   "bin": {
@@ -23,31 +23,31 @@
   },
   "homepage": "https://github.com/brendtumi/feasible#readme",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
-    "chalk": "5.3.0",
-    "commander": "12.0.0",
-    "debug": "4.3.4",
+    "chalk": "5.4.1",
+    "commander": "13.1.0",
+    "debug": "4.4.0",
     "exec-sh": "0.4.0",
-    "globby": "14.0.0",
-    "inquirer": "9.2.13",
-    "isolated-vm": "4.7.2",
+    "globby": "14.1.0",
+    "inquirer": "12.5.0",
+    "isolated-vm": "5.0.4",
     "js-yaml": "4.1.0",
     "json5": "2.2.3",
     "lodash.get": "4.4.2",
-    "make-dir": "4.0.0",
-    "update-notifier": "7.0.0",
-    "uuid": "9.0.1"
+    "make-dir": "5.0.0",
+    "update-notifier": "7.3.1",
+    "uuid": "11.1.0"
   },
   "devDependencies": {
-    "chai": "5.0.3",
-    "eslint": "8.56.0",
+    "chai": "5.2.0",
+    "eslint": "8.57.1",
     "eslint-config-standard": "17.1.0",
-    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-import": "2.31.0",
     "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-promise": "6.1.1",
-    "mocha": "10.2.0"
+    "eslint-plugin-promise": "6.6.0",
+    "mocha": "11.1.0"
   },
   "eslintConfig": {
     "env": {
