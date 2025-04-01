@@ -1,6 +1,6 @@
 {
   "name": "feasible",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "A question-answer based, configurable and automated development environment setup wizard that helps automate and standardize development environments across teams.",
   "main": "lib/index.js",
   "type": "module",
