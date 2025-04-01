@@ -8,6 +8,7 @@ const execAsync = promisify(exec);
 const sourceLockFile = './test/test-02-feasible.yml.lock';
 const destLockFile = './test/feasible.lock';
 const configFile = './test/config.json';
+const envFile = './test/.env';
 
 describe('feasible CLI - test-02 configuration with lock and config file creation', () => {
   before(async () => {
@@ -21,17 +22,13 @@ describe('feasible CLI - test-02 configuration with lock and config file creatio
   });
 
   after(async () => {
-    // Remove destLockFile if it exists.
-    try {
-      await fs.unlink(destLockFile);
-    } catch (err) {
-      // Ignore if file does not exist.
-    }
-    // Remove config.json if it exists.
-    try {
-      await fs.unlink(configFile);
-    } catch (err) {
-      // Ignore if file does not exist.
+    const files = [destLockFile, configFile, envFile];
+    for (const file of files) {
+      try {
+        await fs.unlink(file);
+      } catch (err) {
+        // Ignore if file does not exist.
+      }
     }
   });
 
@@ -40,6 +37,8 @@ describe('feasible CLI - test-02 configuration with lock and config file creatio
       'node ../bin/cli.js --config test-02-feasible.yml --noInteraction',
       { cwd: './test' }
     );
+
+    // eslint-disable-next-line no-unused-expressions
     expect(stderr).to.be.empty;
     expect(stdout).to.include('Setting up environment...');
     expect(stdout).to.include('Setup complete!');
