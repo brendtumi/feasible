@@ -154,7 +154,7 @@ feasible --quiet
 
 ## Requirements
 
-- Node.js >= 18
+- Node.js >= 20
 
 ## License
 
