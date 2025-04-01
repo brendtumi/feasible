@@ -1,0 +1,44 @@
+variables:
+  APP_NAME:
+    question: "What is your app name?"
+    type: input
+    initial: test-app
+  NODE_ENV:
+    question: "Which environment?"
+    type: list
+    options:
+      - development
+      - test
+      - production
+    initial: development
+  PORT:
+    question: "Which port to use?"
+    type: input
+    initial: "3000"
+
+defaults:
+  TIMESTAMP:
+    type: bash
+    command: date +%s
+    output: text
+
+files:
+  .env: |-
+    APP_NAME=${APP_NAME}
+    NODE_ENV=${NODE_ENV}
+    PORT=${PORT}
+    TIMESTAMP=${TIMESTAMP}
+
+  config.json:
+    type: json
+    variables:
+      - APP_NAME
+      - NODE_ENV
+      - PORT
+      - TIMESTAMP
+
+actions:
+  pre:
+    - echo "Setting up environment..."
+  post:
+    - echo "Setup complete!"
