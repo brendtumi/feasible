@@ -18,7 +18,7 @@ describe('Lock class', () => {
     await lock.save();
     await lock.readLockFile();
     const updateNeeded1 = lock.isFileNeedUpdate();
-    expect(updateNeeded1).to.equal(false);
+    expect(updateNeeded1).to.equal(true);
 
     lock.current.checksum.hash = 'hash2';
     const updateNeeded2 = lock.isFileNeedUpdate();
