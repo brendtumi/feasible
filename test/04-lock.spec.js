@@ -17,10 +17,10 @@ describe('Lock class', () => {
     lock.setFileList(['file']);
     await lock.save();
     await lock.readLockFile();
-    expect(lock.isFileNeedUpdate()).to.be.false;
+    expect(lock.isFileNeedUpdate()).to.equal(false);
 
     lock.current.checksum.hash = 'hash2';
-    expect(lock.isFileNeedUpdate()).to.be.true;
+    expect(lock.isFileNeedUpdate()).to.equal(true);
 
     await lock.backup();
     lock.current.variables.B = 2;
