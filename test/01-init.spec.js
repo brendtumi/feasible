@@ -5,7 +5,6 @@ import chai, {
 } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 
-
 // eslint-disable-next-line no-unused-vars
 import { feasible } from '../lib/index.js';
 
