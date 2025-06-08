@@ -16,7 +16,7 @@ describe('feasible', () => {
   it('should be rejected without configuration', () => {
     // return expect(feasible()).to.be.an('object');
     // return feasible().should.be.rejectedWith("Cannot read properties of undefined (reading 'actions')");
-    return feasible().should.be.rejected;
+    return feasible({}).should.be.rejected;
   });
   // it('should be rejected for unsupported conf file', () => {
   //   return feasible({ config: './test/scenarios/00-unsupported.toml' }).should.be.rejectedWith(
