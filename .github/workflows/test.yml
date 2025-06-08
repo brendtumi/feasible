@@ -20,3 +20,9 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm test
+      - name: Generate coverage report
+        run: npx c8 --reporter=text --reporter=lcov npm test
+      - uses: actions/upload-artifact@v3
+        with:
+          name: coverage
+          path: coverage
