@@ -1,11 +1,15 @@
-import {
+import chai, {
   should,
   // eslint-disable-next-line no-unused-vars
   expect
 } from 'chai';
+import chaiAsPromised from 'chai-as-promised';
+
 
 // eslint-disable-next-line no-unused-vars
 import { feasible } from '../lib/index.js';
+
+chai.use(chaiAsPromised);
 
 should();
 
@@ -13,7 +17,7 @@ describe('feasible', () => {
   it('should be rejected without configuration', () => {
     // return expect(feasible()).to.be.an('object');
     // return feasible().should.be.rejectedWith("Cannot read properties of undefined (reading 'actions')");
-    return true;
+    return feasible().should.be.rejected;
   });
   // it('should be rejected for unsupported conf file', () => {
   //   return feasible({ config: './test/scenarios/00-unsupported.toml' }).should.be.rejectedWith(
