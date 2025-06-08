@@ -34,7 +34,7 @@ program
   .option('-n, --noClean', 'Prevent cleaning up old output files', false)
   .option(
     '-i, --noInteraction',
-    'Execute in non-interactive mode. Lock file must exist; any non-present value will be pass as empty.',
+    'Execute in non-interactive mode. Lock file must exist; any non-present value will be passed as empty.',
     false
   )
   .option('-q, --quiet', 'Execute in silent mode', false)
