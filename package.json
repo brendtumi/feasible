@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test": "mocha",
+    "coverage": "npx c8 --reporter=text --reporter=lcov npm test",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
